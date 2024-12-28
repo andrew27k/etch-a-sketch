@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-height: 40rem;
+    max-width: 40rem;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.925);
+}
+
+.toggleGridRaster {
+    border: 1px solid black;
+}
+
+
+
+.active{
+    background-color: rgba(76, 0, 0, 0.281);
+}
+
+.controlContainer {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 4em auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.controlContainer label {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.controlContainer button {
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .controlContainer {
+        max-width: 100%;
+        margin: 1em .5em;
+    }
+    
+}
